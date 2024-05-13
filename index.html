@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le equazioni differenziali</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Equazioni differenziali</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="#">Storia</a>
+    <a href="#">Applicazioni</a>
+</nav>
+
+<h2 style="padding: 20px; margin: 20px;"> 
+    UN ESEMPIO: <br><br>
+    Sappiamo per esperienza che, se ci prepariamo una tazza di una bevanda bollente, con il passare del tempo la temperature de lla bevanda tende a scendere fino a raggiungere quella dell'ambiente circostante. All'inizio la bevanda si raffredda più velocemente e man man che ci si avvicina alla temperatura ambiente la variazione è più lenta. Effettuando misure ,si scopre che la velocità con cui varia la temperatura è proporzionale in ogni istante alla differenza tra la temperatura del corpo e quella ambiente. <br> <br> La legge di raffreddamento è espressa in una equazione che lega la temperatura della bevanda 𝑻 alla sua variazione nel corso del tempo, cioè la derivata 𝑻 ', e permette di ricavare la temperatura istante per istante.<br>Se 𝑻a è la temperatura ambiente, per ogni istante di tempo 𝑡 si ha:  𝑻 '(𝑡) = 𝑘[ 𝑻(𝑡) - 𝑻a ],  dove 𝑘 è una costante di proporzionalità. <br><br>Un'equazione di questo tipo, che mette in relazione una funzione con le sue derivate è un' EQUAZIONE DIFFERENZIALE.
+    </h2>
+
+<section style="background-color: khaki;">
+    <h2 style="color: red;">DEFINIZIONE</h2>
+    <p>Un'<b> equazione diferenziale</b> è un'equazione che ha per incognita una funzione 𝐲 nella variabile 𝑥 e che stabilisce una relazione fra 𝑥,𝐲 e almeno una della sue derivate(𝐲 ',𝐲 '',..), cioè un'equazione del tipo 𝑭(𝑥 ;𝐲 ; 𝐲 '; 𝐲 '';...) = 0. </p>
+</section>
+
+<br>
+<h2 style="padding:20px;margin:20px">ESEMPIO : <br> 𝐲 '' + 𝐲 - 2𝑥 = 0 <br> 𝐲 ' - 4x² + 1 = 0 <br> Sono equazioni differenziali<br> 
+</h2>
+
+<h2 style="padding: 20px;margin: 20px">
+    L'<b>ordine</b> di un'equazione differenziale è dato dall'ordine massimo delle derivate che compaiono nell'equazione. <br>
+    Per esempio : 𝐲 ''' - 2 𝐲 ' = 3 𝑥𝐲 è un'equazione differenziale di terzo ordine perchè compare (come massimo valore) la derivata terza di 𝐲.
+</h2>
+
+<br>
+
+<h2 style="padding:20px;margin:20px"> 
+In generale le soluzioni di un'equazione differenziale sono infinite. <br>
+La soluzione (o integrale) che ottengo da un'equazione differenzale è detto <b>integrale generale</b>, che è l'insieme di tutte le infinite soluzioni. Imponendo delle condizioni, si ottiene invece una soluzione che rappresenta un'<b>integrale particolare</b> dell'equazione.
+</h2>
+
+<h2 style="padding: 20px; margin:20px"> 
+    Le equazioni differenziali di primo ordine. <br></h2>
+<section style="background-color: khaki;">
+    <p>
+    Un'equazione differenziale di primo ordine è riconducibile alla forma 𝑭(𝑥 ;𝐲 ; 𝐲 ') = 0,
+    </p>
+</section>
+<br>
+<h2 style="padding: 20px;margin:20px"> Si dividono in: </h2>
+<br>
+<section style="background-color: khaki;">
+    <h2>Variabili separate</h2>
+    <p>Dove le variabili 𝑥 ;𝐲 ; 𝐲 ' non sono moltiplicate tra loro. <br>
+    Esempio : 𝐲 ' - 6x² = 0 <br>
+    Per risolverla si ordinano i membri in modo da tenere ciò che è 𝐲 e/o 𝐲 ' al primo membro e tutto il resto nel secondo membro. dopo essere stati ordinati si integrano ambo i membri e si ottiene l'integrale generale (infinite funzioni).
+    </p>
+
+</section>
+
+<br>
+
+<section style="background-color: khaki;">
+    <h2>Variabili separabili</h2>
+    <p>Un' equazione differenziale del primo ordine è detta a <b>variabili separabili</b>
+    quando può essere scritta nella forma 𝐲 '= g(𝑥) ∙ h(𝐲), con g(𝑥) ∙ h(𝐲)funzioni continue rispettivamente nella sola variabile 𝑥 e nella sola 𝐲. <br><br> </p> 
+</section>
+<br>
+<section>
+    <p>
+    Per esempio:  𝐲 '= 2𝑥 ∙(𝐲 - 1)² è a variabili separate mentre  𝐲 '= 2𝑥 + (𝐲 - 1)² non lo è. <br><br>
+    Consideriamo l'equazione differenziale : 𝐲 '= 4𝑥𝐲² . <br>
+    In questo caso g(𝑥) = 4𝑥  e  h(𝐲) = 𝐲² . <br>
+    Per risolverla: <br>
+    -usiamo la notazione 𝐲 ' = d𝐲 / d𝑥 e riscriviamo l'equazione: <br><br>
+    d𝐲 / d𝑥 = 4𝑥𝐲² . <br><br>
+    -Separiamo le variabili in modo da avere la 𝐲 al primo membro e la 𝑥 al secondo e per levare il d𝑥 al primo membro lo moltiplichiamo quindi la quantità da moltiplicaare ad entrambi i membri è 1/𝐲² ∙ d𝑥. rischiviamo e viene: <br><br>
+
+    d𝐲 / 𝐲² = 4𝑥 dx . <br><br>
+    -Integriamo entrambi i membri e ricaviamo 𝐲 in funzione di 𝑥 dall'uguaglianza fra le primitive <br>
+
+    </p>
+    
+</section>
+
+<br>
+
+<h2 style="padding: 20px;margin:20px">
+    Spesso in un'equazione differenziale del primo ordine si cerca un'integrale particolare la cui curva passa per il punto (x0 ; y0) assegnato. in questo caso la risuluzione dell'equazione si trsforma in un sistema e deve soddisfare le due condizioni: <br>
+    𝑭(𝑥 ;𝐲 ; 𝐲 ') = 0 <br><br>
+    y0 = 𝑓( x0 )
+
+    <br><br>Un problema di questo genere è detto <b>problema di Cauchy</b> e la condizione y0 = 𝑓( x0 ) è detta <b>condizione iniziale del problema di Cauchy</b>. 
+
+    <div style="padding 20px; margin: 20px;">
+        <img src="https://media.discordapp.net/attachments/1239633850318196848/1239633958329651210/4B30F85B-E299-4B70-ADFB-FE59B52D08BC.jpg?ex=6643a296&is=66425116&hm=79a08b3bf90ec78f3dd4cb6fe7f654bf58cba71acab8dfc6843cc9374fe2b86e&" width="700">
+    </div>
+</h2>
+<br>
+<section style="background-color: khaki;">
+    <h2 style="color:red;">TEOREMA</h2>
+    <p>
+        Sia 𝐺( 𝑥 ; 𝐲 ) una funzione di due variabili reali, continua in un sottoinsieme aperto 𝐴 del piano e dotata di derivata parziale rispetto a 𝐲, anch'essa continua in 𝐴. Sia poi 𝑃( 𝑥0 ; 𝐲0 ) un punto qualsiasi appartenente ad 𝐴. Allora il problema di Chauchy, espresso dal sistema: <br><br>
+
+        𝐲 ' = 𝐺( 𝑥 ; 𝐲 )<br>
+        𝐲 = 𝑓( x0 ) <br><br>
+        ammette una e una sola soluzione 𝐲 = 𝑓( x ), definita in un intorno di x0.
+    </p> 
+        
+
+<footer>
+    <p>&copy; 2024 Conti Lorenzo, Di Biagio Francesco, Piscopo Enzo, Reginelli Valerio</p>
+</footer>
+
+</body>
+</html>
