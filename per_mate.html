@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il mio fantastico sito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Benvenuto nel mio fantastico sito!</h1>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="storia.html">storia</a>
+    <a href="per_mate.html">applicazioni</a>
+</nav>
+
+<section>
+    <h2>Ricavare la formula dello spazio, in un moto uniformemente accelerato, applicando il problema di Cauchy</h2>
+    <p>In fisica si è sempre stati abituati, quando ci si trova davanti ad un
+        moto uniformemente accelerato, a calcolare lo spazio percorso in un
+        determinato istante di tempo con la seguente formula:
+        <br><br>
+        
+        <img src="Immagine 1.png">
+        <br><br>
+        dove "s<sub>0</sub>" è la distanza iniziale, "v<sub>0</sub>" è la
+        velocità iniziale, "a" è l'accelerazione e "t" è la variabile
+        indipendente che rappresenta il tempo, espressa in secondi
+        <br><br>
+        Ma come si è arrivati a questa formula? Con equazioni
+        differenziali e problema di Cauchy.
+        Però, per capire, dobbiamo dotarci di un esempio:
+        <br><br>
+        Vogliamo calcolare lo spazio percorso in un istante di tempo "t",
+        sapendo che:
+        <br><br>
+        <strong>Immagine 2</strong>
+        <img src="Immagine 2.png">
+        <br><br>
+        Noi sappiamo che l'accelerazione e la velocità sono rispettivamente derivata
+        seconda e prima della funzione spazio. Per poterla ricavare,
+        basta applicare l'operazione inversa della derivata,
+        ovvero l'integrale, sulla funzione accelerazione e sul
+        suo risultato, ovvero la funzione velocità.
+        <br><br>
+        Trascurando le unità di misura, perché futili al
+        calcolo, procederemo in questo modo:
+        <br><br>
+        <strong>Immagine 3</strong>
+        <img src="Immagine 3.png">
+        <br><br>
+        <strong>Immagine 4</strong>
+        <img src="Immagine 4.png">
+        <br><br>
+        Abbiamo quindi ottenuto il nostro integrale generale. L'unica
+        cosa che ci manca da fare è ricavare c<sub>1</sub> e c<sub>2</sub><br> Come? Applicando
+        il problema di Cauchy
+        <br><br>
+        Il problema di Cauchy ci permette di trovare le costanti
+        dell'integrale generale, e quindi di trovare l'integrale finale, detto "particolare",
+        ovvero quello che ci descrive esattamente questo moto,
+        attraverso le condizioni iniziali poste a inizio problema.
+        <br><br>
+        <strong>Immagine 5</strong>
+        <img src="Immagine 5.png">
+        <br><br>
+        Per trovare c<sub>1</sub> basta sostituire, nella funzione v(t),
+        3 al posto di "v(t)" e 0 al posto di "t", quindi forzando il
+        passaggio della funzione nel punto iniziale P(0, 3):
+        <br><br>
+        <strong>Immagine 6</strong>
+        <img src="Immagine 6.png">
+        <br><br>
+        Stesso procedimento per ricavare c<sub>2</sub> dalla funzione
+        spazio, sostituendo 7 al posto di "s(t)" e 0 al posto di "t",
+        tenendo in considerazione che c<sub>1</sub> è già stato trovato:
+        <br><br>
+        <strong>Immagine 7</strong>
+        <img src="Immagine 7.png">
+        <br><br>
+        L'equazione finale, ovvero l'integrale particolare, che ci
+        permette di calcolare lo spazio percorso da questo moto
+        in un certo istante "t", risulta essere:
+        <br><br>
+        <strong>Immagine 8</strong>
+        <img src="Immagine 8.png">
+        <br><br>
+        Sostituendo i valori iniziali v<sub>0</sub> e s<sub>0</sub> all'interno della
+        formula utilizzata in fisica, si arriva allo stesso identico
+        risultato.
+        <br><br>
+        Ecco dimostrato come essa è stata ottenuta.
+        <br><br><br>
+    </p>
+</section>
+
+<footer>
+    <p>&copy; 2024 Il mio fantastico sito</p>
+</footer>
+
+</body>
+</html>
